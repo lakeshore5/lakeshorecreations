@@ -193,13 +193,13 @@ img {
 
 .portfolio-title {
     font-family: 'Cinzel', serif;
-    font-size: clamp(4rem, 12vw, 10rem);
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
     font-weight: 700;
     color: var(--gold-color);
     text-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.8),
-        0 0 30px rgba(255, 215, 0, 0.3);
-    letter-spacing: 0.1em;
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.3);
+    letter-spacing: 0.05em;
     animation: glow 3s ease-in-out infinite alternate;
 }
 
@@ -574,7 +574,7 @@ img {
     }
     
     .portfolio-title {
-        font-size: clamp(3rem, 10vw, 6rem);
+        font-size: clamp(1.8rem, 7vw, 3.2rem);
     }
     
     .nav-container {
@@ -689,7 +689,7 @@ img {
 
 @media screen and (max-width: 480px) {
     .portfolio-title {
-        font-size: clamp(2.5rem, 8vw, 4rem);
+        font-size: clamp(1.4rem, 6vw, 2.5rem);
     }
     
     .build-title {
@@ -760,9 +760,10 @@ img {
 .hero-subtitle {
     color: rgba(255, 215, 0, 0.8);
     font-weight: 300;
-    margin-top: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    max-width: 800px;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-top: 0.75rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.4;
@@ -1086,13 +1087,12 @@ img {
 
 .portfolio-title {
     opacity: 0;
-    animation: slideUpFromBottom 0.8s ease-out forwards;
+    animation: slideUpFromBottom 0.8s ease-out forwards, glow 3s ease-in-out infinite alternate;
     animation-delay: 0.2s;
 }
 
 .hero-subtitle {
     opacity: 0;
-    font-size: 1.8rem;
     animation: slideUpFromBottom 0.8s ease-out forwards;
     animation-delay: 0.5s;
 }
