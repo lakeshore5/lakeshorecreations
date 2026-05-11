@@ -21,255 +21,255 @@ const buildData = {
         title: 'Loriostrond',
         description: 'Loriostrond, the Vaulted City of Dreams, is majestic elven stronghold nestled in the heart of war-torn lands. This build showcases intricate architectural details inspired by Tolkien\'s Middle-earth, featuring soaring spires, elegant bridges, and harmonious integration with the natural landscape. The design emphasizes organic curves and natural materials, creating a living fortress that feels both grand and welcoming.\n\nBuilt on athion.net, version 1.12.2\nPlot size is 1225x1225\nRanked to Grand Creator',
         images: [
-            'builds/athion-builds/Loriostrond/LoriostrondNew.png',
-            'builds/athion-builds/Loriostrond/LoriostrondNewAerial.png',
-            'builds/athion-builds/Loriostrond/LoriostrondNewTerra.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewSide.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewRear.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewCliffs.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewTerraSide.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewForest.jpeg',
-            'builds/athion-builds/Loriostrond/LoriostrondNewGarden.png',
-            'builds/athion-builds/Loriostrond/LoriostrondNewTerraDetails.jpeg',
-            'builds/athion-builds/Loriostrond/2025-09-28_03.45.38.png',
-            'builds/athion-builds/Loriostrond/2025-09-28_03.50.43.png',
-            'builds/athion-builds/Loriostrond/F38A1212-357A-49DC-9B6B-49E8E30EC118.jpeg',
-            'builds/athion-builds/Loriostrond/DE517882-5A17-4025-B7B6-D0A90256E342.jpeg',
-            'builds/athion-builds/Loriostrond/A54345AB-9C23-4922-B909-1F3A203B0E91.jpeg',
-            'builds/athion-builds/Loriostrond/54A2F9D5-EB08-45A1-A5A6-A3CDE6DE13D2.jpeg',
-            'builds/athion-builds/Loriostrond/6BDBA87F-774B-4C79-A649-5166F6076A0E.jpeg'
+            'builds/athion-builds/Loriostrond/LoriostrondNew.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewAerial.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewTerra.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewSide.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewRear.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewCliffs.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewTerraSide.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewForest.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewGarden.webp',
+            'builds/athion-builds/Loriostrond/LoriostrondNewTerraDetails.webp',
+            'builds/athion-builds/Loriostrond/2025-09-28_03.45.38.webp',
+            'builds/athion-builds/Loriostrond/2025-09-28_03.50.43.webp',
+            'builds/athion-builds/Loriostrond/F38A1212-357A-49DC-9B6B-49E8E30EC118.webp',
+            'builds/athion-builds/Loriostrond/DE517882-5A17-4025-B7B6-D0A90256E342.webp',
+            'builds/athion-builds/Loriostrond/A54345AB-9C23-4922-B909-1F3A203B0E91.webp',
+            'builds/athion-builds/Loriostrond/54A2F9D5-EB08-45A1-A5A6-A3CDE6DE13D2.webp',
+            'builds/athion-builds/Loriostrond/6BDBA87F-774B-4C79-A649-5166F6076A0E.webp'
         ]
     },
     'aurelios': {
         title: 'Aurelios The Lost City',
         description: 'An underwater metropolis that once thrived beneath the waves, now partially reclaimed by the ocean. This ambitious build combines classical architecture with aquatic elements, featuring grand colonnades, sunken plazas, and mysterious ruins. The attention to detail in both the architectural elements and the underwater atmosphere creates a truly immersive experience.\n\nBuilt on athion.net, version 1.12.2\nPlot size 609x609',
         images: [
-            'builds/athion-builds/Aurelios_the_Lost_City/Atlantis.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisAerial.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBack.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBackCliff.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBoat.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisCity.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisGround.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisInterior.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisNecropolis.png',
-            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisTerra.png'
+            'builds/athion-builds/Aurelios_the_Lost_City/Atlantis.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisAerial.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBack.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBackCliff.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisBoat.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisCity.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisGround.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisInterior.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisNecropolis.webp',
+            'builds/athion-builds/Aurelios_the_Lost_City/AtlantisTerra.webp'
         ]
     },
     'heliox-station': {
         title: 'Heliox Station',
         description: 'A massive orbital research facility suspended in the void of space, Heliox Station represents humanity\'s furthest reach into the cosmos. This ambitious sci-fi build features sleek industrial architecture, advanced docking systems, and cutting-edge research laboratories. The station\'s modular design showcases both functional engineering and aesthetic beauty, with sweeping curves and geometric precision that capture the essence of future space exploration.\n\nBuilt on athion.net, version 1.12.2',
         images: [
-            'builds/athion-builds/Heliox_Station/SpaceCinematic.png',
-            'builds/athion-builds/Heliox_Station/SpaceBuild.png',
-            'builds/athion-builds/Heliox_Station/SpaceTerra.png',
-            'builds/athion-builds/Heliox_Station/SpaceShip.png',
-            'builds/athion-builds/Heliox_Station/SpaceAerial.jpeg',
-            'builds/athion-builds/Heliox_Station/SpaceMap.jpeg'
+            'builds/athion-builds/Heliox_Station/SpaceCinematic.webp',
+            'builds/athion-builds/Heliox_Station/SpaceBuild.webp',
+            'builds/athion-builds/Heliox_Station/SpaceTerra.webp',
+            'builds/athion-builds/Heliox_Station/SpaceShip.webp',
+            'builds/athion-builds/Heliox_Station/SpaceAerial.webp',
+            'builds/athion-builds/Heliox_Station/SpaceMap.webp'
         ]
     },
     'yuanhua-pagoda': {
         title: 'Yuanhua Pagoda',
         description: 'A magnificent traditional Chinese pagoda that embodies the essence of ancient oriental architecture with meticulous attention to detail. This multi-tiered structure showcases intricate wooden frameworks, elegant curved rooflines, and ornate decorative elements that reflect centuries of architectural tradition. The pagoda stands as a testament to the harmony between natural materials and sophisticated design, featuring traditional landscaping and mythical dragon motifs that enhance its cultural authenticity.\n\nBuilt on the Bakery server, 2024\nPlot size 501x501',
         images: [
-            'builds/personal-projects/Yuanhua_Pagoda/OrientalCinematic.png',
-            'builds/personal-projects/Yuanhua_Pagoda/OrientalAerial.jpeg',
-            'builds/personal-projects/Yuanhua_Pagoda/OrientalDragon.png',
-            'builds/personal-projects/Yuanhua_Pagoda/OrientalBuild.jpeg'
+            'builds/personal-projects/Yuanhua_Pagoda/OrientalCinematic.webp',
+            'builds/personal-projects/Yuanhua_Pagoda/OrientalAerial.webp',
+            'builds/personal-projects/Yuanhua_Pagoda/OrientalDragon.webp',
+            'builds/personal-projects/Yuanhua_Pagoda/OrientalBuild.webp'
         ]
     },
     'adventus-mortis': {
         title: 'Adventus Mortis',
         description: 'Inspired by the Monument to Cardinal Cinzio Aldobrandini, San Pietro in Vincoli, this tribute to the Angel of Death seamlessly integrates baroque altar designs with large scale organics and plantlife to create a dark, foreboding atmosphere. The harsh contrast of light and dark is reminiscent of chiaroscuro art works.\n\nBuilt in 2024 on BuildersRefuge.',
         images: [
-            'builds/personal-projects/Adventus_Mortis/DeathAltar.png'
+            'builds/personal-projects/Adventus_Mortis/DeathAltar.webp'
         ]
     },
     'palais-lumiere': {
         title: 'Palais Lumière',
         description: 'An elegant French baroque palace showcasing the grandeur and sophistication of classical European architecture. This magnificent structure features ornate decorative elements and symmetrical facades that embody the opulence of French palatial design. Every detail has been meticulously crafted to capture the essence of aristocratic elegance and architectural refinement.\n\nBuilt in 2020 on BuildersRefuge\nInspired by French baroque architecture',
         images: [
-            'builds/personal-projects/Palais_Lumière/LumCard.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumFront.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumAngle.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumArch.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumFount.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumSide.jpeg',
-            'builds/personal-projects/Palais_Lumière/LumAerial.jpeg'
+            'builds/personal-projects/Palais_Lumière/LumCard.webp',
+            'builds/personal-projects/Palais_Lumière/LumFront.webp',
+            'builds/personal-projects/Palais_Lumière/LumAngle.webp',
+            'builds/personal-projects/Palais_Lumière/LumArch.webp',
+            'builds/personal-projects/Palais_Lumière/LumFount.webp',
+            'builds/personal-projects/Palais_Lumière/LumSide.webp',
+            'builds/personal-projects/Palais_Lumière/LumAerial.webp'
         ]
     },
     'christmas-build-battle': {
         title: 'Christmas 2231',
         description: 'A collaborative futuristic Christmas wonderland that reimagines holiday traditions in the year 2231. Partnering with creeper5777, we blended festive cheer with cutting-edge sci-fi architecture to create a complete space-age Christmas village. The project features advanced structures, floating islands, and innovative holiday designs that demonstrate rapid creative execution while maintaining exceptional attention to detail and thematic consistency.\n\nBuilt in Minecraft 1.12.2 as a 2-person collaborative build battle\nCompleted in under one week',
         images: [
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmas.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasCinematic.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasAngle.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasBack.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasLow.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasTop.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasFacade.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasDetail.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasInterior.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasCandy.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasShip.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasIslands.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasBot.png',
-            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasVillage.jpeg'
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmas.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasCinematic.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasAngle.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasBack.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasLow.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasTop.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasFacade.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasDetail.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasInterior.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasCandy.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasShip.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasIslands.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasBot.webp',
+            'builds/xenos-builds/Futuristic_Christmas_BuildBattle/SpaceChristmasVillage.webp'
         ]
     },
     'cma': {
         title: 'CMA NFT World',
         description: 'An expansive and immersive Minecraft world showcasing diverse landscapes with multiple biomes, settlements, and architectural styles seamlessly integrated into a cohesive design. This comprehensive project includes everything from grand palaces and bustling villages to serene lakes and dramatic terraforming, creating a complete virtual ecosystem ready for exploration and interaction.\n\nCommissioned NFT Worlds project for CMA, built with creeper5777 (XenosBuilds).',
         images: [
-            'builds/xenos-builds/CMA/CMACinematic.png',
-            'builds/xenos-builds/CMA/CMAImmersive.png',
-            'builds/xenos-builds/CMA/CMAAerial.png',
-            'builds/xenos-builds/CMA/CMASide.png',
-            'builds/xenos-builds/CMA/CMAClose.png',
-            'builds/xenos-builds/CMA/CMATerra.png',
-            'builds/xenos-builds/CMA/CMAPalace.jpeg',
-            'builds/xenos-builds/CMA/CMALake.jpeg',
-            'builds/xenos-builds/CMA/CMAVillage.jpeg',
-            'builds/xenos-builds/CMA/CMAPlots.jpeg',
-            'builds/xenos-builds/CMA/CMAPVP.jpeg'
+            'builds/xenos-builds/CMA/CMACinematic.webp',
+            'builds/xenos-builds/CMA/CMAImmersive.webp',
+            'builds/xenos-builds/CMA/CMAAerial.webp',
+            'builds/xenos-builds/CMA/CMASide.webp',
+            'builds/xenos-builds/CMA/CMAClose.webp',
+            'builds/xenos-builds/CMA/CMATerra.webp',
+            'builds/xenos-builds/CMA/CMAPalace.webp',
+            'builds/xenos-builds/CMA/CMALake.webp',
+            'builds/xenos-builds/CMA/CMAVillage.webp',
+            'builds/xenos-builds/CMA/CMAPlots.webp',
+            'builds/xenos-builds/CMA/CMAPVP.webp'
         ]
     },
     'futurex': {
         title: 'FutureX',
         description: 'A cutting-edge futuristic city showcasing advanced technology and sleek architectural design. This ambitious project features towering skyscrapers, high-tech laboratories, defensive bastions, and interconnected urban districts that create a cohesive vision of tomorrow. The build demonstrates innovative use of modern materials and lighting to achieve a truly immersive sci-fi atmosphere with detailed interiors and expansive city planning.\n\nXenosBuilds project with creeper5777, designed as an interactive RPG environment.',
         images: [
-            'builds/xenos-builds/FutureX/FutureX.png',
-            'builds/xenos-builds/FutureX/FutureXCity.png',
-            'builds/xenos-builds/FutureX/FutureXLab.png',
-            'builds/xenos-builds/FutureX/FutureXClose.png',
-            'builds/xenos-builds/FutureX/FutureXAerial.png',
-            'builds/xenos-builds/FutureX/FutureXBastion.png'
+            'builds/xenos-builds/FutureX/FutureX.webp',
+            'builds/xenos-builds/FutureX/FutureXCity.webp',
+            'builds/xenos-builds/FutureX/FutureXLab.webp',
+            'builds/xenos-builds/FutureX/FutureXClose.webp',
+            'builds/xenos-builds/FutureX/FutureXAerial.webp',
+            'builds/xenos-builds/FutureX/FutureXBastion.webp'
         ]
     },
     'xenos-castle': {
         title: 'Xenos Castle',
         description: 'A formidable medieval fortress designed for epic siege warfare and strategic combat. This imposing castle features massive defensive walls, towering battlements, intricate interior chambers, and tactical positioning that creates the perfect battlefield for intense multiplayer encounters. The design balances historical authenticity with gameplay functionality, offering multiple levels of engagement from ground assaults to aerial perspectives.\n\nXenosBuilds project with creeper5777, designed as an interactive castle siege minigame.\nBuilt in one day.',
         images: [
-            'builds/xenos-builds/XenosCastle/XenosCastle.png',
-            'builds/xenos-builds/XenosCastle/XenosCastleGround.png',
-            'builds/xenos-builds/XenosCastle/XenosCastleInside.png',
-            'builds/xenos-builds/XenosCastle/XenosCastleAerial.png',
-            'builds/xenos-builds/XenosCastle/XenosCastleOut.png'
+            'builds/xenos-builds/XenosCastle/XenosCastle.webp',
+            'builds/xenos-builds/XenosCastle/XenosCastleGround.webp',
+            'builds/xenos-builds/XenosCastle/XenosCastleInside.webp',
+            'builds/xenos-builds/XenosCastle/XenosCastleAerial.webp',
+            'builds/xenos-builds/XenosCastle/XenosCastleOut.webp'
         ]
     },
     'dragon-point-castle': {
         title: 'Dragon Point Castle',
         description: 'A magnificent dragon-themed castle that combines medieval fortress architecture with fantastical dragon motifs. This impressive structure features towering spires, intricate stonework, and dramatic dragon sculptures integrated into the castle\'s design. The build showcases both defensive capabilities and mythical grandeur, creating a perfect balance between functionality and fantasy aesthetics.\n\nBuilt as a collaboration with creeper5777, alaiwe, and mengzach.',
         images: [
-            'builds/xenos-builds/DragonPoint/DragonPoint.jpeg',
-            'builds/xenos-builds/DragonPoint/DragonPointSide.png',
-            'builds/xenos-builds/DragonPoint/DragonPointBack.png',
-            'builds/xenos-builds/DragonPoint/DragonPointDragon.jpeg',
-            'builds/xenos-builds/DragonPoint/DragonPointVillage.png',
-            'builds/xenos-builds/DragonPoint/DragonPointGround.jpeg',
-            'builds/xenos-builds/DragonPoint/DragonPointAerial.jpeg'
+            'builds/xenos-builds/DragonPoint/DragonPoint.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointSide.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointBack.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointDragon.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointVillage.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointGround.webp',
+            'builds/xenos-builds/DragonPoint/DragonPointAerial.webp'
         ]
     },
     'royal-palace': {
         title: 'Royal Palace',
         description: 'A majestic royal palace showcasing opulent architecture and regal grandeur. This magnificent structure features elegant facades, grand courtyards, intricate detailing, and luxurious interiors that embody the essence of royal sophistication. From aerial perspectives to intimate interior spaces, every angle reveals the meticulous craftsmanship and architectural excellence that defines true palatial design.\n\nCommissioned for Nitric Concepts for the Minecraft Marketplace.',
         images: [
-            'builds/marketplace-projects/NitricPalace/NitricPalace.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceCenter.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceDepth.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceAngle.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceSide.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceAerial.png',
-            'builds/marketplace-projects/NitricPalace/NitricPalaceInterior.png'
+            'builds/marketplace-projects/NitricPalace/NitricPalace.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceCenter.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceDepth.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceAngle.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceSide.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceAerial.webp',
+            'builds/marketplace-projects/NitricPalace/NitricPalaceInterior.webp'
         ]
     },
     'skuxxverse': {
         title: 'SkuxxVerse',
         description: 'An expansive virtual world showcasing diverse environments and immersive gameplay experiences. This comprehensive project demonstrates advanced world-building techniques and creative design solutions that push the boundaries of what\'s possible in Minecraft. The build features multiple biomes, interactive elements, and carefully crafted landscapes that create a truly engaging virtual universe.\n\nNFT Worlds commission for XenosBuilds with creeper5777 and Kimbert.',
         images: [
-            'builds/xenos-builds/SkuxxVerse/SkuxxVerse.JPG',
+            'builds/xenos-builds/SkuxxVerse/SkuxxVerse.webp',
             'builds/xenos-builds/SkuxxVerse/SkuxxverseAerial.webp',
-            'builds/xenos-builds/SkuxxVerse/Screenshot1.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot2.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot3.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot4.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot5.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot6.png',
-            'builds/xenos-builds/SkuxxVerse/Screenshot7.png'
+            'builds/xenos-builds/SkuxxVerse/Screenshot1.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot2.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot3.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot4.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot5.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot6.webp',
+            'builds/xenos-builds/SkuxxVerse/Screenshot7.webp'
         ]
     },
     'skull-castle': {
         title: 'Skull Castle',
         description: 'A menacing fortress that embodies dark architectural mastery with intricate skull motifs and gothic design elements. This imposing structure showcases detailed stonework, dramatic spires, and ominous atmospheric elements that create a truly formidable presence. Every angle reveals the meticulous craftsmanship that brings this sinister castle to life.\n\nDemo project for an upcoming 11,000x11,000 map. Built as a collaboration with InfinityBuilds and Jetblade3000 in 3 days.',
         images: [
-            'builds/personal-projects/Skull_Castle/SkullCastle.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleSide.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleBackSide.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleBackAerial.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleBack.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleFrontDetails.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleBackDetails.png',
-            'builds/personal-projects/Skull_Castle/SkullCastleTopDetails.png'
+            'builds/personal-projects/Skull_Castle/SkullCastle.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleSide.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleBackSide.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleBackAerial.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleBack.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleFrontDetails.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleBackDetails.webp',
+            'builds/personal-projects/Skull_Castle/SkullCastleTopDetails.webp'
         ]
     },
     'sunset-isle': {
         title: 'Sunset Isle',
         description: 'A serene tropical paradise that captures the tranquil beauty of an island getaway at golden hour. This charming build features pristine beaches, lush vegetation, and carefully designed pathways that invite exploration. The warm lighting and natural terrain create a peaceful atmosphere perfect for relaxation and contemplation.\n\nBuilt for fun in one day.',
         images: [
-            'builds/personal-projects/SunsetIsle/FrontSS.jpeg',
-            'builds/personal-projects/SunsetIsle/SideSS.jpeg',
-            'builds/personal-projects/SunsetIsle/BackSS.jpeg',
-            'builds/personal-projects/SunsetIsle/TerraSS.jpeg',
-            'builds/personal-projects/SunsetIsle/PathSS.jpeg',
-            'builds/personal-projects/SunsetIsle/AerialSS.jpeg'
+            'builds/personal-projects/SunsetIsle/FrontSS.webp',
+            'builds/personal-projects/SunsetIsle/SideSS.webp',
+            'builds/personal-projects/SunsetIsle/BackSS.webp',
+            'builds/personal-projects/SunsetIsle/TerraSS.webp',
+            'builds/personal-projects/SunsetIsle/PathSS.webp',
+            'builds/personal-projects/SunsetIsle/AerialSS.webp'
         ]
     },
     'mrbeast': {
         title: 'MrBeast Competition',
         description: 'As a part of Mr. Beast\'s 2 week long, 1500x1500, prestigious Countries Build Competition, lakeshore5 joined an all star lineup to compete as, and against, the other absolute top global builders in the world. The Scope of the project was to capture the essence of the United States in a single build. lakeshore5 contributed by doing 100% of the terraforming (in less than 2 days), several city blocks, the Seattle Space needle, the composition for the 6 surrounding Islands (The Northwest, the Midwest, Hollywood, Hawaii, The East Coast, and The South), The Alamo and surrounding structures, Uncle Sam, the Washington Memorial and other monumental east coast architecture, atmosphereic details, pasting in all the lovely trees and organic elements (designed by the esteemed InfinityBuilds), and a large amount of the touch up, integration, and general thematic elements. lakeshore5 was thrilled to work with some of his closest colleagues in InfinityBuilds and creeper5777 on a project of just magnitude, and was happy to be counted among the best builders alive.',
         images: [
-            'builds/personal-projects/MrBeast/BeastFront.png',
-            'builds/personal-projects/MrBeast/Beast3.png',
-            'builds/personal-projects/MrBeast/NW1.png',
-            'builds/personal-projects/MrBeast/NW2.png',
-            'builds/personal-projects/MrBeast/Beast4.png',
-            'builds/personal-projects/MrBeast/NW3.png',
-            'builds/personal-projects/MrBeast/NW4.png',
-            'builds/personal-projects/MrBeast/Beast5.png',
-            'builds/personal-projects/MrBeast/MW1.png',
-            'builds/personal-projects/MrBeast/MW2.png',
-            'builds/personal-projects/MrBeast/Beast6.png',
-            'builds/personal-projects/MrBeast/MW3.png',
-            'builds/personal-projects/MrBeast/MW4.png',
-            'builds/personal-projects/MrBeast/Beast7.png',
-            'builds/personal-projects/MrBeast/EC1.png',
-            'builds/personal-projects/MrBeast/EC2.png',
-            'builds/personal-projects/MrBeast/Beast8.png',
-            'builds/personal-projects/MrBeast/EC3.png',
-            'builds/personal-projects/MrBeast/Cali1.png',
-            'builds/personal-projects/MrBeast/Cali2.png',
-            'builds/personal-projects/MrBeast/Beast9.png',
-            'builds/personal-projects/MrBeast/Cali3.png',
-            'builds/personal-projects/MrBeast/Cali4.png',
-            'builds/personal-projects/MrBeast/Beast10.png',
-            'builds/personal-projects/MrBeast/Cali5.png',
-            'builds/personal-projects/MrBeast/Cali6.png',
-            'builds/personal-projects/MrBeast/Beast11.png',
-            'builds/personal-projects/MrBeast/South1.png',
-            'builds/personal-projects/MrBeast/South2.png',
-            'builds/personal-projects/MrBeast/Beast12.png',
-            'builds/personal-projects/MrBeast/South3.png',
-            'builds/personal-projects/MrBeast/South4.png',
-            'builds/personal-projects/MrBeast/Beast13.png',
-            'builds/personal-projects/MrBeast/Hawaii1.png',
-            'builds/personal-projects/MrBeast/Hawaii2.png',
-            'builds/personal-projects/MrBeast/Islands1.png',
-            'builds/personal-projects/MrBeast/Islands2.png',
-            'builds/personal-projects/MrBeast/Animal1.png',
-            'builds/personal-projects/MrBeast/Animal2.png',
-            'builds/personal-projects/MrBeast/Animal3.png',
-            'builds/personal-projects/MrBeast/BeastFinal.png'
+            'builds/personal-projects/MrBeast/BeastFront.webp',
+            'builds/personal-projects/MrBeast/Beast3.webp',
+            'builds/personal-projects/MrBeast/NW1.webp',
+            'builds/personal-projects/MrBeast/NW2.webp',
+            'builds/personal-projects/MrBeast/Beast4.webp',
+            'builds/personal-projects/MrBeast/NW3.webp',
+            'builds/personal-projects/MrBeast/NW4.webp',
+            'builds/personal-projects/MrBeast/Beast5.webp',
+            'builds/personal-projects/MrBeast/MW1.webp',
+            'builds/personal-projects/MrBeast/MW2.webp',
+            'builds/personal-projects/MrBeast/Beast6.webp',
+            'builds/personal-projects/MrBeast/MW3.webp',
+            'builds/personal-projects/MrBeast/MW4.webp',
+            'builds/personal-projects/MrBeast/Beast7.webp',
+            'builds/personal-projects/MrBeast/EC1.webp',
+            'builds/personal-projects/MrBeast/EC2.webp',
+            'builds/personal-projects/MrBeast/Beast8.webp',
+            'builds/personal-projects/MrBeast/EC3.webp',
+            'builds/personal-projects/MrBeast/Cali1.webp',
+            'builds/personal-projects/MrBeast/Cali2.webp',
+            'builds/personal-projects/MrBeast/Beast9.webp',
+            'builds/personal-projects/MrBeast/Cali3.webp',
+            'builds/personal-projects/MrBeast/Cali4.webp',
+            'builds/personal-projects/MrBeast/Beast10.webp',
+            'builds/personal-projects/MrBeast/Cali5.webp',
+            'builds/personal-projects/MrBeast/Cali6.webp',
+            'builds/personal-projects/MrBeast/Beast11.webp',
+            'builds/personal-projects/MrBeast/South1.webp',
+            'builds/personal-projects/MrBeast/South2.webp',
+            'builds/personal-projects/MrBeast/Beast12.webp',
+            'builds/personal-projects/MrBeast/South3.webp',
+            'builds/personal-projects/MrBeast/South4.webp',
+            'builds/personal-projects/MrBeast/Beast13.webp',
+            'builds/personal-projects/MrBeast/Hawaii1.webp',
+            'builds/personal-projects/MrBeast/Hawaii2.webp',
+            'builds/personal-projects/MrBeast/Islands1.webp',
+            'builds/personal-projects/MrBeast/Islands2.webp',
+            'builds/personal-projects/MrBeast/Animal1.webp',
+            'builds/personal-projects/MrBeast/Animal2.webp',
+            'builds/personal-projects/MrBeast/Animal3.webp',
+            'builds/personal-projects/MrBeast/BeastFinal.webp'
         ]
     }
 };

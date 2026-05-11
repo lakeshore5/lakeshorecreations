@@ -6,7 +6,7 @@ function loadNavbar(activePage) {
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="./">
-                    <img src="assets/images/Logo.png" alt="lakeshore5 logo" class="nav-logo-img">
+                    <img src="assets/images/Logo.webp" alt="lakeshore5 logo" class="nav-logo-img">
                     <span>lakeshore5</span>
                 </a>
             </div>
