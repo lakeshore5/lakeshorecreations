@@ -6,13 +6,16 @@ function loadNavbar(activePage) {
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="./">
-                    <img src="assets/images/Logo.webp" alt="lakeshore5 logo" class="nav-logo-img">
-                    <span>lakeshore5</span>
+                    <img src="assets/images/Logo.png" alt="Lakeshore Creations logo" class="nav-logo-img">
+                    <span>Lakeshore Creations</span>
                 </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="./" class="nav-link" data-page="portfolio">Portfolio</a>
+                    <a href="./" class="nav-link" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link" data-page="portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link" data-page="about">About</a>

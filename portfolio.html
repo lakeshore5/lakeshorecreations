@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lakeshore Creations</title>
+    <meta name="description" content="View the portfolio of Lakeshore Creations, showcasing professional Minecraft builds.">
+    <meta name="keywords" content="Lakeshore Creations portfolio, Minecraft builds, professional Minecraft builder portfolio">
+    <link rel="icon" type="image/png" href="assets/images/Logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- Background with gradient overlay -->
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="portfolio-title">Portfolio</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <p class="content-text">Portfolio content coming soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="shared/navbar.js"></script>
+    <script src="shared/footer.js"></script>
+    <script src="shared/hero.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavbar('portfolio');
+            loadFooter();
+            loadHeroSlideshow();
+        });
+    </script>
+</body>
+</html>
