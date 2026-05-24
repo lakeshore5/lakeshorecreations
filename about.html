@@ -134,21 +134,34 @@
 
         function initAccordion() {
             const cards = document.querySelectorAll('.accordion-card');
+            let animating = false;
             
             cards.forEach(card => {
                 const header = card.querySelector('.accordion-header');
                 
                 header.addEventListener('click', () => {
+                    if (animating) return;
+                    
                     const isOpen = card.classList.contains('active');
+                    const currentlyOpen = document.querySelector('.accordion-card.active');
                     
-                    // Close all other cards
-                    cards.forEach(c => {
-                        c.classList.remove('active');
-                        c.querySelector('.accordion-icon').textContent = '+';
-                    });
-                    
-                    // Toggle current card (only open if it wasn't already open)
-                    if (!isOpen) {
+                    if (isOpen) {
+                        // Just close the current card
+                        card.classList.remove('active');
+                        card.querySelector('.accordion-icon').textContent = '+';
+                    } else if (currentlyOpen) {
+                        // Another card is open — close it first, then open the new one
+                        animating = true;
+                        currentlyOpen.classList.remove('active');
+                        currentlyOpen.querySelector('.accordion-icon').textContent = '+';
+                        
+                        setTimeout(() => {
+                            card.classList.add('active');
+                            card.querySelector('.accordion-icon').textContent = '−';
+                            animating = false;
+                        }, 400); // matches the CSS transition duration
+                    } else {
+                        // Nothing is open — just open the clicked card
                         card.classList.add('active');
                         card.querySelector('.accordion-icon').textContent = '−';
                     }
