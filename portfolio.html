@@ -418,28 +418,138 @@
 
         function initPortfolio() {
             const immersiveWorlds = [
-                { name: "Yuanhua Pagoda", folder: "lakeshore5", mainImage: "OrientalCinematic.webp", images: ["OrientalCinematic.webp", "OrientalAerial.webp", "OrientalBuild.webp", "OrientalDragon.webp"] },
-                { name: "Skull Castle", folder: "lakeshore5", mainImage: "SkullCastle.webp", images: ["SkullCastle.webp", "SkullCastleBackAerial.webp", "SkullCastleBackSide.webp", "SkullCastleFrontDetails.webp", "SkullCastleSide.webp"] },
-                { name: "Le-Duc Chateau", folder: "creeper5777", mainImage: "creepergcfinal.webp", images: ["creepergcfinal.webp", "creepergcaerial.webp"] },
-                { name: "Christmas 2231", folder: "lakeshore5", mainImage: "SpaceChristmas.webp", images: ["SpaceChristmas.webp", "SpaceChristmasAngle.webp", "SpaceChristmasBack.webp", "SpaceChristmasCandy.webp", "SpaceChristmasCinematic.webp", "SpaceChristmasDetail.webp", "SpaceChristmasFacade.webp", "SpaceChristmasIslands.webp", "SpaceChristmasShip.webp"] },
-                { name: "CMA Palace", folder: "lakeshore5", mainImage: "CMACinematic.webp", images: ["CMACinematic.webp", "CMAAerial.webp", "CMAClose.webp", "CMAImmersive.webp", "CMALake.webp", "CMAPVP.webp", "CMAPalace.webp", "CMASide.webp", "CMATerra.webp", "CMAVillage.webp"] },
-                { name: "Creeper Cathedral", folder: "creeper5777", mainImage: "creepcathedralhighres.webp", images: ["creepcathedralhighres.webp", "creepcathedralfarhighres.webp", "creepcathedralsidehighres.webp"] },
-                { name: "Loriostrond", folder: "lakeshore5", mainImage: "LoriostrondNew.webp", images: ["LoriostrondNew.webp", "LoriostrondNewAerial.webp", "LoriostrondNewCliffs.webp", "LoriostrondNewGarden.webp", "LoriostrondNewTerra.webp", "LoriostrondNewTerraSide.webp"] },
-                { name: "FutureX Station", folder: "lakeshore5", mainImage: "FutureX.webp", images: ["FutureX.webp", "FutureXAerial.webp", "FutureXBastion.webp", "FutureXCity.webp", "FutureXClose.webp", "FutureXLab.webp"] },
-                { name: "Desert World", folder: "LiejumCas", mainImage: "desertpalacefinalreallyreal.webp", images: ["desertpalacefinalreallyreal.webp", "savanafinal.webp"] },
-                { name: "Gothic Castle", folder: "LiejumCas", mainImage: "gothicclean.webp", images: ["gothicclean.webp"] },
-                { name: "Aurelios: The Lost City", folder: "lakeshore5", mainImage: "Atlantis.webp", images: ["Atlantis.webp", "AtlantisAerial.webp", "AtlantisCity.webp", "AtlantisInterior.webp", "AtlantisTerra.webp"] },
-                { name: "Xenos Castle", folder: "lakeshore5", mainImage: "XenosCastle.webp", images: ["XenosCastle.webp", "XenosCastleAerial.webp", "XenosCastleGround.webp", "XenosCastleInside.webp", "XenosCastleOut.webp"] },
-                { name: "Palais Lumiere", folder: "lakeshore5", mainImage: "LumCard.webp", images: ["LumCard.webp", "LumAerial.webp", "LumAngle.webp", "LumSide.webp"] },
-                { name: "Nitric Palace", folder: "lakeshore5", mainImage: "NitricPalace.webp", images: ["NitricPalace.webp", "NitricPalaceAngle.webp", "NitricPalaceDepth.webp"] },
-                { name: "Medieval Village", folder: "LiejumCas", mainImage: "medievalhodge.webp", images: ["medievalhodge.webp"] },
-                { name: "Dragon Point", folder: "lakeshore5", mainImage: "DragonPoint.webp", images: ["DragonPoint.webp", "DragonPointBack.webp", "DragonPointDragon.webp", "DragonPointGround.webp", "DragonPointVillage.webp"] },
-                { name: "Gothic Cave System", folder: "donut_ish", mainImage: "donutcavehero.webp", images: ["donutcavehero.webp", "donutcave.webp", "donutcave2.webp", "Donutfuturecave.webp"] },
-                { name: "Evergreen", folder: "donut_ish", mainImage: "donutevergreenhero.webp", images: ["donutevergreenhero.webp", "donutevergreen.webp"] },
-                { name: "Sci-Fi Island", folder: "donut_ish", mainImage: "donutbighero.webp", images: ["donutbighero.webp"] },
-                { name: "Twilight Temple", folder: "donut_ish", mainImage: "Donutmood.webp", images: ["Donutmood.webp"] },
-                { name: "Sci-Fi Spawn", folder: "donut_ish", mainImage: "donutspawn.webp", images: ["donutspawn.webp"] },
-                { name: "Desert Palace", folder: "donut_ish", mainImage: "donutdesertcollab.webp", images: ["donutdesertcollab.webp", "donutdesertcollab2.webp", "donutdesertcollab3.webp", "donutdesertcollab4.webp"] }
+                {
+                    name: "Yuanhua Pagoda",
+                    folder: "lakeshore5",
+                    mainImage: "OrientalCinematic.webp",
+                    images: ["OrientalCinematic.webp", "OrientalBuild.webp", "OrientalDragon.webp", "OrientalImmersive1.webp", "OrientalImmersive2.webp", "OrientalInterior.webp", "OrientalInterior2.webp", "OrientalInterior3.webp"]
+                },
+                {
+                    name: "Skull Castle",
+                    folder: "lakeshore5",
+                    mainImage: "SkullCastle.webp",
+                    images: ["SkullCastle.webp", "SkullCastleBackSide.webp", "SkullCastleFrontDetails.webp", "SkullCastleSide.webp", "SkullCastleImmersion.webp", "SkullCastleImmersion2.webp"]
+                },
+                {
+                    name: "Le-Duc Chateau",
+                    folder: "creeper5777",
+                    mainImage: "creepergcfinal.webp",
+                    images: ["creepergcfinal.webp", "creepergcaerial.webp", "creepergcback.webp", "creepergccitadel.webp", "creepergccliffs.webp", "creepergcdistance.webp", "creepergcmood.webp", "creepergcnight.webp", "creepergcterra.webp"]
+                },
+                {
+                    name: "Christmas 2231",
+                    folder: "lakeshore5",
+                    mainImage: "SpaceChristmas.webp",
+                    images: ["SpaceChristmas.webp", "SpaceChristmasAngle.webp", "SpaceChristmasBack.webp", "SpaceChristmasCandy.webp", "SpaceChristmasCinematic.webp", "SpaceChristmasDetail.webp", "SpaceChristmasFacade.webp", "SpaceChristmasIslands.webp", "SpaceChristmasShip.webp", "SpaceChristmasImmersive.webp", "SpaceChristmasImmersive2.webp", "SpaceChristmasImmersive3.webp"]
+                },
+                {
+                    name: "CMA Palace",
+                    folder: "lakeshore5",
+                    mainImage: "CMACinematic.webp",
+                    images: ["CMACinematic.webp", "CMAAerial.webp", "CMAClose.webp", "CMAImmersive.webp", "CMALake.webp", "CMAPVP.webp", "CMAPalace.webp", "CMASide.webp", "CMATerra.webp", "CMAVillage.webp", "CMAImmersive2.webp"]
+                },
+                {
+                    name: "Creeper Cathedral",
+                    folder: "creeper5777",
+                    mainImage: "creepcathedralhighres.webp",
+                    images: ["creepcathedralhighres.webp", "creepcathedralfarhighres.webp", "creepcathedralsidehighres.webp", "creepcathedralhighresimmersive.webp", "creepcathedralhighresimmersive2.webp"]
+                },
+                {
+                    name: "Loriostrond",
+                    folder: "lakeshore5",
+                    mainImage: "LoriostrondNew.webp",
+                    images: ["LoriostrondNew.webp", "LoriostrondNewAerial.webp", "LoriostrondNewCliffs.webp", "LoriostrondNewGarden.webp", "LoriostrondNewTerra.webp", "LoriostrondNewTerraSide.webp", "LoriostrondImmersion.webp", "LoriostrondImmersion2.webp"]
+                },
+                {
+                    name: "FutureX Station",
+                    folder: "lakeshore5",
+                    mainImage: "FutureX.webp",
+                    images: ["FutureX.webp", "FutureXAerial.webp", "FutureXBastion.webp", "FutureXCity.webp", "FutureXClose.webp", "FutureXLab.webp", "FutureXImmersive.webp", "FutureXImmersive2.webp"]
+                },
+                {
+                    name: "Desert World",
+                    folder: "LiejumCas",
+                    mainImage: "desertpalacefinalreallyreal.webp",
+                    images: ["desertpalacefinalreallyreal.webp", "savanafinal.webp", "desertpalaceimmersive.webp", "desertpalaceimmersive2.webp", "desertpalaceimmersive3.webp", "desertpalaceimmersive4.webp", "desertpalaceimmersive5.webp"]
+                },
+                {
+                    name: "Gothic Castle",
+                    folder: "LiejumCas",
+                    mainImage: "gothicclean.webp",
+                    images: ["gothicclean.webp", "gothiccleanimmersive.webp", "gothiccleanimmersive2.webp", "gothiccleanimmersive3.webp", "gothiccleanimmersive4.webp"]
+                },
+                {
+                    name: "Aurelios: The Lost City",
+                    folder: "lakeshore5",
+                    mainImage: "Atlantis.webp",
+                    images: ["Atlantis.webp", "AtlantisAerial.webp", "AtlantisCity.webp", "AtlantisInterior.webp", "AtlantisTerra.webp", "AtlantisImmersive.webp", "AtlantisImmersive2.webp", "AtlantisImmersive3.webp"]
+                },
+                {
+                    name: "Xenos Castle",
+                    folder: "lakeshore5",
+                    mainImage: "XenosCastle.webp",
+                    images: ["XenosCastle.webp", "XenosCastleGround.webp", "XenosCastleInside.webp", "XenosCastleOut.webp", "XenosCastleImmersive.webp", "XenosCastleImmersive2.webp", "XenosCastleImmersive3.webp"]
+                },
+                {
+                    name: "Palais Lumiere",
+                    folder: "lakeshore5",
+                    mainImage: "LumCard.webp",
+                    images: ["LumCard.webp", "LumAerial.webp", "LumAngle.webp", "LumSide.webp"]
+                },
+                {
+                    name: "Nitric Palace",
+                    folder: "lakeshore5",
+                    mainImage: "NitricPalace.webp",
+                    images: ["NitricPalace.webp", "NitricPalaceAngle.webp", "NitricPalaceDepth.webp"]
+                },
+                {
+                    name: "Medieval Village",
+                    folder: "LiejumCas",
+                    mainImage: "medievalhodge.webp",
+                    images: ["medievalhodge.webp", "medievalhodgeimmersive.webp"]
+                },
+                {
+                    name: "Dragon Point",
+                    folder: "lakeshore5",
+                    mainImage: "DragonPoint.webp",
+                    images: ["DragonPoint.webp", "DragonPointBack.webp", "DragonPointDragon.webp", "DragonPointGround.webp", "DragonPointVillage.webp"]
+                },
+                {
+                    name: "Gothic Cave System",
+                    folder: "donut_ish",
+                    mainImage: "donutcavehero.webp",
+                    images: ["donutcavehero.webp", "donutcave.webp", "donutcave2.webp", "Donutfuturecave.webp", "donutcaveheroimmersive1.webp", "donutcaveheroimmersive2.webp", "donutcaveheroimmersive3.webp", "donutcaveheroimmersive4.webp", "donutcaveheroimmersive5.webp"]
+                },
+                {
+                    name: "Evergreen",
+                    folder: "donut_ish",
+                    mainImage: "donutevergreenhero.webp",
+                    images: ["donutevergreenhero.webp", "donutevergreen.webp"]
+                },
+                {
+                    name: "Sci-Fi Island",
+                    folder: "donut_ish",
+                    mainImage: "donutbighero.webp",
+                    images: ["donutbighero.webp"]
+                },
+                {
+                    name: "Twilight Temple",
+                    folder: "donut_ish",
+                    mainImage: "Donutmood.webp",
+                    images: ["Donutmood.webp"]
+                },
+                {
+                    name: "Sci-Fi Spawn",
+                    folder: "donut_ish",
+                    mainImage: "donutspawn.webp",
+                    images: ["donutspawn.webp"]
+                },
+                {
+                    name: "Desert Palace",
+                    folder: "donut_ish",
+                    mainImage: "donutdesertcollab.webp",
+                    images: ["donutdesertcollab.webp", "donutdesertcollab2.webp", "donutdesertcollab3.webp", "donutdesertcollab4.webp"]
+                }
             ];
 
             const organics = [
@@ -456,7 +566,8 @@
                 { name: "Reaper Mouse", folder: "magik", image: "magikmouse.webp" },
                 { name: "Anime Pose", folder: "magik", image: "magikanime.webp" },
                 { name: "Anime Pose II", folder: "magik", image: "magikanime2.webp" },
-                { name: "Anime Pose III", folder: "magik", image: "magikanime4.webp" }
+                { name: "Anime Pose III", folder: "magik", image: "magikanime4.webp" },
+                { name: "Flowers", folder: "magik", image: "magikflowers.webp" }
             ];
 
             const miscBuilds = [
@@ -486,7 +597,13 @@
                 { name: "Sun Temple", folder: "donut_ish", image: "donutsun.webp" },
                 { name: "Tree Temple", folder: "donut_ish", image: "donuttreetemple.webp" },
                 { name: "Tropical Island", folder: "donut_ish", image: "donutisland.webp" },
-                { name: "Island Paradise", folder: "donut_ish", image: "donutisland2.webp" }
+                { name: "Island Paradise", folder: "donut_ish", image: "donutisland2.webp" },
+                { name: "Island Scene", folder: "donut_ish", image: "donutislandscene.webp" },
+                { name: "Cave III", folder: "donut_ish", image: "donutcave3.webp" },
+                { name: "Bone Structure", folder: "LiejumCas", image: "bonestrucreal.webp" },
+                { name: "Bone Immersive", folder: "LiejumCas", image: "CasBoneImmersive.webp" },
+                { name: "Bone Immersive II", folder: "LiejumCas", image: "CasBoneImmersive2.webp" },
+                { name: "Infinity Star Wars", folder: "InfinityBuilds", image: "Infinitystarwars.webp" }
             ];
 
             const worldsGrid = document.getElementById('worldsGrid');
