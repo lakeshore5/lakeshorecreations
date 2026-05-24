@@ -1,6 +1,5 @@
 // Shared Navbar Component Loader
 function loadNavbar(activePage) {
-    // For now, let's embed the navbar directly to test
     const navbarHTML = `
     <nav class="navbar">
         <div class="nav-container">
@@ -14,8 +13,13 @@ function loadNavbar(activePage) {
                 <li class="nav-item">
                     <a href="./" class="nav-link" data-page="home">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-dropdown">
                     <a href="portfolio.html" class="nav-link" data-page="portfolio">Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#immersive-worlds" class="dropdown-link">Immersive Worlds</a></li>
+                        <li><a href="portfolio.html#organics" class="dropdown-link">Organics</a></li>
+                        <li><a href="portfolio.html#miscellaneous" class="dropdown-link">Miscellaneous</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link" data-page="about">About</a>
@@ -32,16 +36,13 @@ function loadNavbar(activePage) {
         </div>
     </nav>`;
     
-    // Insert navbar into the navbar container
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
         navbarContainer.innerHTML = navbarHTML;
     } else {
-        // Fallback: insert at beginning of body
         document.body.insertAdjacentHTML('afterbegin', navbarHTML);
     }
     
-    // Set active page
     if (activePage) {
         const activeLink = document.querySelector(`[data-page="${activePage}"]`);
         if (activeLink) {
@@ -49,11 +50,9 @@ function loadNavbar(activePage) {
         }
     }
     
-    // Initialize mobile navigation after navbar is loaded
     initMobileNavigation();
 }
 
-// Initialize mobile navigation (moved from script.js)
 function initMobileNavigation() {
     const mobileMenu = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');
@@ -65,8 +64,7 @@ function initMobileNavigation() {
         navMenu.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking nav links
-    document.querySelectorAll('.nav-link').forEach(link => {
+    document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
             navMenu.classList.remove('active');
