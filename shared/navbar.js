@@ -6,8 +6,8 @@ function loadNavbar(activePage) {
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="./">
-                    <img src="assets/images/Logo.png" alt="Lakeshore Creations logo" class="nav-logo-img">
-                    <span>Lakeshore Creations</span>
+                    <img src="assets/images/Logo.png" alt="Mythos Creations logo" class="nav-logo-img">
+                    <span>Mythos Creations</span>
                 </a>
             </div>
             <ul class="nav-menu">

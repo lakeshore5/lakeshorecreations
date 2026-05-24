@@ -3,25 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Lakeshore Creations</title>
-    <meta name="description" content="View the portfolio of Lakeshore Creations, showcasing professional Minecraft builds.">
-    <meta name="keywords" content="Lakeshore Creations portfolio, Minecraft builds, professional Minecraft builder portfolio">
+    <title>Portfolio - Mythos Creations</title>
+    <meta name="description" content="View the portfolio of Mythos Creations, showcasing professional Minecraft builds.">
+    <meta name="keywords" content="Mythos Creations portfolio, Minecraft builds, professional Minecraft builder portfolio">
     <link rel="icon" type="image/png" href="assets/images/Logo.png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .portfolio-section {
+            padding: 4rem 0;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+        .portfolio-section-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 600;
+            color: var(--gold-color);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+        
+        /* FLEXBOX LAYOUT - Fixed height, variable width */
+        .worlds-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .world-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            height: 280px;
+            border: 1px solid rgba(213, 161, 47, 0.2);
+            transition: all 0.4s ease;
+        }
+        .world-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-color);
+            box-shadow: 0 15px 40px rgba(213, 161, 47, 0.2);
+        }
+        .world-card img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.4s ease;
+        }
+        .world-card:hover img {
+            transform: scale(1.05);
+        }
+        .world-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem 1.5rem 1.5rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        .world-card:hover .world-card-overlay {
+            opacity: 1;
+            transform: translateY(0);
+            padding-bottom: 2rem;
+        }
+        .world-card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--gold-color);
+            margin: 0;
+            letter-spacing: 0.02em;
+        }
+        .world-card-count {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.5rem;
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            overflow-y: auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .modal-overlay.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .modal-close {
+            position: fixed;
+            top: 1.5rem;
+            right: 2rem;
+            font-size: 2.5rem;
+            color: var(--gold-color);
+            cursor: pointer;
+            z-index: 10001;
+            transition: all 0.3s ease;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        .modal-close:hover {
+            transform: scale(1.2);
+            color: #fff;
+        }
+        .modal-content {
+            max-width: 1200px;
+            width: 100%;
+            padding-top: 3rem;
+        }
+        .modal-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            color: var(--gold-color);
+            text-align: center;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.03em;
+        }
+        .modal-nav-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .modal-main-image {
+            width: 100%;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 12px;
+            border: 1px solid rgba(213, 161, 47, 0.3);
+        }
+        .modal-nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #D5A12F;
+            border-radius: 50%;
+            color: #D5A12F;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .modal-nav-arrow:hover {
+            background: #D5A12F;
+            color: #000;
+            transform: translateY(-50%) scale(1.1);
+        }
+        .modal-nav-arrow.prev { left: 20px; }
+        .modal-nav-arrow.next { right: 20px; }
+        .modal-image-counter {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .modal-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .modal-gallery-item {
+            aspect-ratio: 16/10;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .modal-gallery-item:hover,
+        .modal-gallery-item.active {
+            border-color: var(--gold-color);
+            transform: scale(1.02);
+        }
+        .modal-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        
+        /* Organics - Fixed height, variable width */
+        .organics-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .organic-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            height: 250px;
+            border: 1px solid rgba(213, 161, 47, 0.2);
+            transition: all 0.4s ease;
+        }
+        .organic-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-color);
+            box-shadow: 0 10px 30px rgba(213, 161, 47, 0.15);
+        }
+        .organic-card img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.4s ease;
+        }
+        .organic-card:hover img {
+            transform: scale(1.05);
+        }
+        .organic-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 1rem 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+        .organic-card:hover .organic-card-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .organic-card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gold-color);
+            margin: 0;
+        }
+        
+        /* Misc - Fixed height, variable width */
+        .misc-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .misc-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            height: 220px;
+            border: 1px solid rgba(213, 161, 47, 0.15);
+            transition: all 0.4s ease;
+        }
+        .misc-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold-color);
+            box-shadow: 0 10px 30px rgba(213, 161, 47, 0.15);
+        }
+        .misc-card img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.4s ease;
+        }
+        .misc-card:hover img {
+            transform: scale(1.05);
+        }
+        .misc-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 1rem 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+        .misc-card:hover .misc-card-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .misc-card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--gold-color);
+            margin: 0;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .worlds-grid, .organics-grid, .misc-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .world-card, .organic-card, .misc-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            .world-card img, .organic-card img, .misc-card img {
+                width: 100%;
+                height: 100%;
+            }
+            .modal-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .modal-close {
+                top: 1rem;
+                right: 1rem;
+                font-size: 2rem;
+            }
+            .modal-nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            .modal-nav-arrow.prev { left: 10px; }
+            .modal-nav-arrow.next { right: 10px; }
+        }
+    </style>
 </head>
 <body>
     <div id="navbar-container"></div>
-
-    <!-- Background with gradient overlay -->
     <div class="background-container">
         <div class="background-image"></div>
         <div class="gradient-overlay"></div>
     </div>
-
-    <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
@@ -29,18 +372,38 @@
             </div>
         </div>
     </section>
-
-    <!-- Content Section -->
-    <section class="content-section">
+    <section class="portfolio-section">
         <div class="container">
-            <div class="content-wrapper">
-                <p class="content-text">Portfolio content coming soon.</p>
-            </div>
+            <h2 class="portfolio-section-title">Immersive Worlds</h2>
+            <div class="worlds-grid" id="worldsGrid"></div>
         </div>
     </section>
-
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-section-title">Organics</h2>
+            <div class="organics-grid" id="organicsGrid"></div>
+        </div>
+    </section>
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-section-title">Miscellaneous Builds</h2>
+            <div class="misc-grid" id="miscGrid"></div>
+        </div>
+    </section>
+    <div class="modal-overlay" id="worldModal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-content">
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <div class="modal-nav-container">
+                <button class="modal-nav-arrow prev" id="modalPrev" style="display:none;">&#10094;</button>
+                <img class="modal-main-image" id="modalMainImage" src="" alt="">
+                <button class="modal-nav-arrow next" id="modalNext" style="display:none;">&#10095;</button>
+                <span class="modal-image-counter" id="modalCounter"></span>
+            </div>
+            <div class="modal-gallery" id="modalGallery"></div>
+        </div>
+    </div>
     <div id="footer-container"></div>
-
     <script src="shared/navbar.js"></script>
     <script src="shared/footer.js"></script>
     <script src="shared/hero.js"></script>
@@ -50,7 +413,204 @@
             loadNavbar('portfolio');
             loadFooter();
             loadHeroSlideshow();
+            initPortfolio();
         });
+
+        function initPortfolio() {
+            const immersiveWorlds = [
+                { name: "Atlantis", folder: "lakeshore5", mainImage: "Atlantis.webp", images: ["Atlantis.webp", "AtlantisAerial.webp", "AtlantisCity.webp", "AtlantisInterior.webp", "AtlantisTerra.webp"] },
+                { name: "CMA Palace", folder: "lakeshore5", mainImage: "CMACinematic.webp", images: ["CMACinematic.webp", "CMAAerial.webp", "CMAClose.webp", "CMAImmersive.webp", "CMALake.webp", "CMAPVP.webp", "CMAPalace.webp", "CMASide.webp", "CMATerra.webp", "CMAVillage.webp"] },
+                { name: "Loriostrond", folder: "lakeshore5", mainImage: "LoriostrondNew.webp", images: ["LoriostrondNew.webp", "LoriostrondNewAerial.webp", "LoriostrondNewCliffs.webp", "LoriostrondNewGarden.webp", "LoriostrondNewTerra.webp", "LoriostrondNewTerraSide.webp"] },
+                { name: "FutureX Station", folder: "lakeshore5", mainImage: "FutureX.webp", images: ["FutureX.webp", "FutureXAerial.webp", "FutureXBastion.webp", "FutureXCity.webp", "FutureXClose.webp", "FutureXLab.webp"] },
+                { name: "Dragon Point", folder: "lakeshore5", mainImage: "DragonPoint.webp", images: ["DragonPoint.webp", "DragonPointBack.webp", "DragonPointDragon.webp", "DragonPointGround.webp", "DragonPointVillage.webp"] },
+                { name: "Xenos Castle", folder: "lakeshore5", mainImage: "XenosCastle.webp", images: ["XenosCastle.webp", "XenosCastleAerial.webp", "XenosCastleGround.webp", "XenosCastleInside.webp", "XenosCastleOut.webp"] },
+                { name: "Space Christmas", folder: "lakeshore5", mainImage: "SpaceChristmas.webp", images: ["SpaceChristmas.webp", "SpaceChristmasAngle.webp", "SpaceChristmasBack.webp", "SpaceChristmasCandy.webp", "SpaceChristmasCinematic.webp", "SpaceChristmasDetail.webp", "SpaceChristmasFacade.webp", "SpaceChristmasIslands.webp", "SpaceChristmasShip.webp"] },
+                { name: "Skull Castle", folder: "lakeshore5", mainImage: "SkullCastle.webp", images: ["SkullCastle.webp", "SkullCastleBackAerial.webp", "SkullCastleBackSide.webp", "SkullCastleFrontDetails.webp", "SkullCastleSide.webp"] },
+                { name: "Palais Lumiere", folder: "lakeshore5", mainImage: "LumCard.webp", images: ["LumCard.webp", "LumAerial.webp", "LumAngle.webp", "LumSide.webp"] },
+                { name: "Oriental Pagoda", folder: "lakeshore5", mainImage: "OrientalCinematic.webp", images: ["OrientalCinematic.webp", "OrientalAerial.webp", "OrientalBuild.webp", "OrientalDragon.webp"] },
+                { name: "Nitric Palace", folder: "lakeshore5", mainImage: "NitricPalace.webp", images: ["NitricPalace.webp", "NitricPalaceAngle.webp", "NitricPalaceDepth.webp"] },
+                { name: "Le-Duc Chateau", folder: "creeper5777", mainImage: "creepergcfinal.webp", images: ["creepergcfinal.webp", "creepergcaerial.webp"] },
+                { name: "Creeper Cathedral", folder: "creeper5777", mainImage: "creepcathedralhighres.webp", images: ["creepcathedralhighres.webp", "creepcathedralfarhighres.webp", "creepcathedralsidehighres.webp"] },
+                { name: "Desert World", folder: "LiejumCas", mainImage: "desertpalacefinalreallyreal.webp", images: ["desertpalacefinalreallyreal.webp", "savanafinal.webp"] },
+                { name: "Gothic Castle", folder: "LiejumCas", mainImage: "gothicclean.webp", images: ["gothicclean.webp"] },
+                { name: "Medieval Village", folder: "LiejumCas", mainImage: "medievalhodge.webp", images: ["medievalhodge.webp"] },
+                { name: "Desert Palace", folder: "donut_ish", mainImage: "donutdesertcollab.webp", images: ["donutdesertcollab.webp", "donutdesertcollab2.webp", "donutdesertcollab3.webp", "donutdesertcollab4.webp"] },
+                { name: "Gothic Cave System", folder: "donut_ish", mainImage: "donutcavehero.webp", images: ["donutcavehero.webp", "donutcave.webp", "donutcave2.webp", "Donutfuturecave.webp"] },
+                { name: "Evergreen", folder: "donut_ish", mainImage: "donutevergreenhero.webp", images: ["donutevergreenhero.webp", "donutevergreen.webp"] },
+                { name: "Sci-Fi Island", folder: "donut_ish", mainImage: "donutbighero.webp", images: ["donutbighero.webp"] },
+                { name: "Twilight Temple", folder: "donut_ish", mainImage: "Donutmood.webp", images: ["Donutmood.webp"] },
+                { name: "Sci-Fi Spawn", folder: "donut_ish", mainImage: "donutspawn.webp", images: ["donutspawn.webp"] }
+            ];
+
+            const organics = [
+                { name: "Adventus Mortis", folder: "lakeshore5", image: "DeathAltar.webp" },
+                { name: "Monkey", folder: "InfinityBuilds", image: "Infinitymonkey.webp" },
+                { name: "Jungle Build", folder: "InfinityBuilds", image: "InfinityJungle.webp" },
+                { name: "St. Michael", folder: "creeper5777", image: "michaelreal.webp" },
+                { name: "Dragon Head", folder: "magik", image: "magikdragon.webp" },
+                { name: "Bird", folder: "magik", image: "magikbird.webp" },
+                { name: "Sculpture", folder: "magik", image: "magiksculpture.webp" },
+                { name: "Side Profile", folder: "magik", image: "magikface.webp" },
+                { name: "Stare", folder: "magik", image: "magikface2.webp" },
+                { name: "Portrait", folder: "magik", image: "magikface3.webp" },
+                { name: "Reaper Mouse", folder: "magik", image: "magikmouse.webp" },
+                { name: "Anime Pose", folder: "magik", image: "magikanime.webp" },
+                { name: "Anime Pose II", folder: "magik", image: "magikanime2.webp" },
+                { name: "Anime Pose III", folder: "magik", image: "magikanime4.webp" }
+            ];
+
+            const miscBuilds = [
+                { name: "Cathedral Interior", folder: "creeper5777", image: "creepgccathedral.webp" },
+                { name: "Chateau Interior", folder: "creeper5777", image: "creepinterior.webp" },
+                { name: "Garden Gate", folder: "magik", image: "magikgate.webp" },
+                { name: "Martian Lab", folder: "creeper5777", image: "creepermartian.webp" },
+                { name: "SkuxxVerse", folder: "lakeshore5", image: "SkuxxVerse.webp" },
+                { name: "Space Cinematic", folder: "lakeshore5", image: "SpaceCinematic.webp" },
+                { name: "Front SS", folder: "lakeshore5", image: "FrontSS.webp" },
+                { name: "Path SS", folder: "lakeshore5", image: "PathSS.webp" },
+                { name: "Forgotten Shrine", folder: "donut_ish", image: "donutbigmood.webp" },
+                { name: "Deserted Tropics", folder: "donut_ish", image: "donutmood2.webp" },
+                { name: "Forgotten City", folder: "donut_ish", image: "donutcollab.webp" },
+                { name: "Invasion", folder: "donut_ish", image: "donutcontest.webp" },
+                { name: "Swamp Citadel", folder: "donut_ish", image: "donutcool.webp" },
+                { name: "Cyber City", folder: "donut_ish", image: "donutcyber.webp" },
+                { name: "Sci-Fi Citadel", folder: "donut_ish", image: "donutfuture.webp" },
+                { name: "Gear World", folder: "donut_ish", image: "donutgear.webp" },
+                { name: "Halo Ring", folder: "donut_ish", image: "donuthalo.webp" },
+                { name: "Jungle Metropolis", folder: "donut_ish", image: "donutjunglecity.webp" },
+                { name: "Light Tower", folder: "donut_ish", image: "donutlighttower.webp" },
+                { name: "Sapphire Palace", folder: "donut_ish", image: "donutsaphire.webp" },
+                { name: "Space Collab", folder: "donut_ish", image: "donutspacecollab.webp" },
+                { name: "Haunted Manor", folder: "donut_ish", image: "donutspooky.webp" },
+                { name: "Star Destroyer", folder: "donut_ish", image: "donutstardestroyer.webp" },
+                { name: "Sun Temple", folder: "donut_ish", image: "donutsun.webp" },
+                { name: "Tree Temple", folder: "donut_ish", image: "donuttreetemple.webp" },
+                { name: "Tropical Island", folder: "donut_ish", image: "donutisland.webp" },
+                { name: "Island Paradise", folder: "donut_ish", image: "donutisland2.webp" }
+            ];
+
+            const worldsGrid = document.getElementById('worldsGrid');
+            immersiveWorlds.forEach((world) => {
+                const card = document.createElement('div');
+                card.className = 'world-card';
+                card.innerHTML = '<img src="builds/' + world.folder + '/' + world.mainImage + '" alt="' + world.name + '" loading="lazy"><div class="world-card-overlay"><h3 class="world-card-title">' + world.name + '</h3><p class="world-card-count">' + world.images.length + ' ' + (world.images.length === 1 ? 'view' : 'views') + '</p></div>';
+                card.addEventListener('click', () => openWorldModal(world));
+                worldsGrid.appendChild(card);
+            });
+
+            const organicsGrid = document.getElementById('organicsGrid');
+            organics.forEach((organic) => {
+                const card = document.createElement('div');
+                card.className = 'organic-card';
+                card.innerHTML = '<img src="builds/' + organic.folder + '/' + organic.image + '" alt="' + organic.name + '" loading="lazy"><div class="organic-card-overlay"><h3 class="organic-card-title">' + organic.name + '</h3></div>';
+                card.addEventListener('click', () => openModal(organic.name, organic.folder, organic.image));
+                organicsGrid.appendChild(card);
+            });
+
+            const miscGrid = document.getElementById('miscGrid');
+            miscBuilds.forEach((build) => {
+                const card = document.createElement('div');
+                card.className = 'misc-card';
+                card.innerHTML = '<img src="builds/' + build.folder + '/' + build.image + '" alt="' + build.name + '" loading="lazy"><div class="misc-card-overlay"><h3 class="misc-card-title">' + build.name + '</h3></div>';
+                card.addEventListener('click', () => openModal(build.name, build.folder, build.image));
+                miscGrid.appendChild(card);
+            });
+
+            const modal = document.getElementById('worldModal');
+            const modalClose = document.getElementById('modalClose');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalMainImage = document.getElementById('modalMainImage');
+            const modalGallery = document.getElementById('modalGallery');
+            const modalPrev = document.getElementById('modalPrev');
+            const modalNext = document.getElementById('modalNext');
+            const modalCounter = document.getElementById('modalCounter');
+
+            let currentImages = [];
+            let currentFolder = '';
+            let currentIndex = 0;
+
+            function updateArrows() {
+                const hasMultiple = currentImages.length > 1;
+                if (!hasMultiple) {
+                    modalPrev.style.display = 'none';
+                    modalNext.style.display = 'none';
+                    modalCounter.textContent = '';
+                    return;
+                }
+                modalCounter.textContent = (currentIndex + 1) + ' / ' + currentImages.length;
+                modalPrev.style.display = currentIndex === 0 ? 'none' : 'flex';
+                modalNext.style.display = currentIndex === currentImages.length - 1 ? 'none' : 'flex';
+            }
+
+            function showImage(index) {
+                currentIndex = index;
+                modalMainImage.src = 'builds/' + currentFolder + '/' + currentImages[index];
+                document.querySelectorAll('.modal-gallery-item').forEach((el, i) => {
+                    el.classList.toggle('active', i === index);
+                });
+                updateArrows();
+            }
+
+            function openWorldModal(world) {
+                currentImages = world.images;
+                currentFolder = world.folder;
+                currentIndex = 0;
+                modalTitle.textContent = world.name;
+                modalMainImage.src = 'builds/' + world.folder + '/' + world.mainImage;
+                modalMainImage.alt = world.name;
+                modalGallery.innerHTML = '';
+                world.images.forEach((img, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'modal-gallery-item' + (index === 0 ? ' active' : '');
+                    item.innerHTML = '<img src="builds/' + world.folder + '/' + img + '" alt="' + world.name + ' view ' + (index + 1) + '" loading="lazy">';
+                    item.addEventListener('click', () => showImage(index));
+                    modalGallery.appendChild(item);
+                });
+                updateArrows();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function openModal(name, folder, image) {
+                currentImages = [image];
+                currentFolder = folder;
+                currentIndex = 0;
+                modalTitle.textContent = name;
+                modalMainImage.src = 'builds/' + folder + '/' + image;
+                modalMainImage.alt = name;
+                modalGallery.innerHTML = '';
+                updateArrows();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            modalPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (currentIndex > 0) showImage(currentIndex - 1);
+            });
+
+            modalNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (currentIndex < currentImages.length - 1) showImage(currentIndex + 1);
+            });
+
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeModal();
+                if (modal.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) showImage(currentIndex - 1);
+                    if (e.key === 'ArrowRight' && currentIndex < currentImages.length - 1) showImage(currentIndex + 1);
+                }
+            });
+        }
     </script>
 </body>
 </html>

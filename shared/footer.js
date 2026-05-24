@@ -14,7 +14,7 @@ function loadFooter() {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Lakeshore Creations</h3>
+                    <h3>Mythos Creations</h3>
                     <p>Professional Minecraft Build Team</p>
                 </div>
                 <div class="footer-section">
@@ -28,7 +28,7 @@ function loadFooter() {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Lakeshore Creations. All rights reserved.</p>
+                <p>&copy; 2026 Mythos Creations. All rights reserved.</p>
             </div>
         </div>
     </footer>`;
