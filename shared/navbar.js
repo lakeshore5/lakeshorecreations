@@ -18,7 +18,7 @@ function loadNavbar(activePage) {
                     <ul class="dropdown-menu">
                         <li><a href="portfolio.html#immersive-worlds" class="dropdown-link">Immersive Worlds</a></li>
                         <li><a href="portfolio.html#organics" class="dropdown-link">Organics</a></li>
-                        <li><a href="portfolio.html#miscellaneous" class="dropdown-link">Miscellaneous</a></li>
+                        <li><a href="portfolio.html#showcase" class="dropdown-link">Showcase</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
